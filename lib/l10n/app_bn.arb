@@ -1,0 +1,12 @@
+{
+  "@@locale": "bn",
+  "appTitle": "লোকালাইজেশন",
+  "welcomeMessage": "হ্যালো! স্বাগতম!",
+  "yourName": "তোমার নাম?",
+  "yourBirthdate": "আর আপনার জন্মতারিখ?",
+  "submit": "জমা দিন",
+  "translator": "ট্রান্সলেটর",
+  "drawerHome": "হোম",
+  "drawerSettings": "সেটিংস",
+  "drawerProfile": "প্রোফাইল"
+}

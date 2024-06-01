@@ -1,0 +1,12 @@
+{
+  "@@locale": "en",
+  "appTitle": "Localization",
+  "welcomeMessage": "Hey! Welcome!",
+  "yourName": "Your name?",
+  "yourBirthdate": "And your birthdate?",
+  "submit": "Submit",
+  "translator": "Translator",
+  "drawerHome": "Home",
+  "drawerSettings": "Settings",
+  "drawerProfile": "Profile"
+}

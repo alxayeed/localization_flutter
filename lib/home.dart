@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:intl/intl.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -38,9 +39,9 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          "Localization",
-          style: TextStyle(
+        title: Text(
+          AppLocalizations.of(context)!.appTitle,
+          style: const TextStyle(
             fontSize: 28.0,
             color: Colors.white,
           ),
@@ -72,9 +73,9 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
-                    'Translator',
-                    style: TextStyle(
+                  Text(
+                    AppLocalizations.of(context)!.translator,
+                    style: const TextStyle(
                       color: Colors.white,
                       fontSize: 24,
                     ),
@@ -97,17 +98,17 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
             ),
-            const ListTile(
-              leading: Icon(Icons.home),
-              title: Text('Home'),
+            ListTile(
+              leading: const Icon(Icons.home),
+              title: Text(AppLocalizations.of(context)!.drawerHome),
             ),
-            const ListTile(
-              leading: Icon(Icons.settings),
-              title: Text('Profile'),
+            ListTile(
+              leading: const Icon(Icons.person),
+              title: Text(AppLocalizations.of(context)!.drawerProfile),
             ),
-            const ListTile(
-              leading: Icon(Icons.settings),
-              title: Text('Settings'),
+            ListTile(
+              leading: const Icon(Icons.settings),
+              title: Text(AppLocalizations.of(context)!.drawerSettings),
             ),
           ],
         ),
@@ -117,9 +118,9 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              "Hey! Welcome!",
-              style: TextStyle(
+            Text(
+              AppLocalizations.of(context)!.welcomeMessage,
+              style: const TextStyle(
                 fontSize: 24.0,
                 fontWeight: FontWeight.w700,
               ),
@@ -128,7 +129,7 @@ class _HomeScreenState extends State<HomeScreen> {
             TextField(
               controller: _nameController,
               decoration: InputDecoration(
-                labelText: "Your name?",
+                labelText: AppLocalizations.of(context)!.yourName,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(15.0),
                 ),
@@ -139,7 +140,7 @@ class _HomeScreenState extends State<HomeScreen> {
               controller: _dateController,
               readOnly: true,
               decoration: InputDecoration(
-                labelText: "And your birthdate?",
+                labelText: AppLocalizations.of(context)!.yourName,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(15.0),
                 ),
@@ -157,9 +158,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   borderRadius: BorderRadius.circular(10.0),
                 ),
               ),
-              child: const Text(
-                "Submit",
-                style: TextStyle(
+              child: Text(
+                AppLocalizations.of(context)!.submit,
+                style: const TextStyle(
                   color: Colors.white,
                   fontSize: 16.0,
                   fontWeight: FontWeight.bold,
