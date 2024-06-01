@@ -3,20 +3,28 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:intl/intl.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  final Function(Locale) changeLanguage;
+
+  const HomeScreen({
+    super.key,
+    required this.changeLanguage,
+  });
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  Locale _locale = const Locale('en');
+  // final Locale _locale = const Locale('bn');
   final TextEditingController _nameController = TextEditingController();
   final TextEditingController _dateController = TextEditingController();
 
-  void _changeLanguage(bool isEnglish) {
+  bool _isBangla = false;
+
+  void _toggleLanguage(bool isBangla) {
     setState(() {
-      _locale = isEnglish ? const Locale('en') : const Locale('bn');
+      _isBangla = isBangla;
+      widget.changeLanguage(Locale(_isBangla ? 'bn' : 'en'));
     });
   }
 
@@ -29,8 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
     if (picked != null) {
       setState(() {
-        _dateController.text =
-            DateFormat.yMd(_locale.languageCode).format(picked);
+        _dateController.text = DateFormat.yMd().format(picked);
       });
     }
   }
@@ -89,9 +96,9 @@ class _HomeScreenState extends State<HomeScreen> {
                         fontSize: 24,
                       ),
                     ),
-                    value: _locale.languageCode == 'en',
+                    value: _isBangla,
                     onChanged: (bool value) {
-                      _changeLanguage(value);
+                      _toggleLanguage(value);
                       // Navigator.pop(context);
                     },
                   ),
