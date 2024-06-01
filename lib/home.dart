@@ -140,7 +140,7 @@ class _HomeScreenState extends State<HomeScreen> {
               controller: _dateController,
               readOnly: true,
               decoration: InputDecoration(
-                labelText: AppLocalizations.of(context)!.yourName,
+                labelText: AppLocalizations.of(context)!.yourBirthdate,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(15.0),
                 ),
