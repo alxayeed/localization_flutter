@@ -74,7 +74,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    AppLocalizations.of(context)!.translator,
+                    AppLocalizations.of(context)!.menu,
                     style: const TextStyle(
                       color: Colors.white,
                       fontSize: 24,
