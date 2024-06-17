@@ -20,7 +20,7 @@ Implementing localization in Flutter ensures that the app can reach a wider audi
 
 
 ## Showcase
-![alt text](https://github.com/alxayeed/-/blob/main/ss/demo.gif)
+![alt text](https://github.com/alxayeed/localization_flutter/blob/main/ss/demo.gif)
 
 <table>
 
