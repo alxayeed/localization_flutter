@@ -20,11 +20,10 @@ Implementing localization in Flutter ensures that the app can reach a wider audi
 
 
 ## Showcase
-![alt text](https://github.com/alxayeed/localization_flutter/blob/main/ss/demo.gif)
+
+<img src="https://github.com/alxayeed/localization_flutter/blob/main/ss/demo.gif" alt="alt text" width="400" height="800">
 
 <table>
-
-
   <tr>
     <td><img src="ss/ss1.png" width="100%" height="70%" /></td>
     <td><img src="ss/ss2.png" width="100%" height="70%" /></td>
