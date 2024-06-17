@@ -1,121 +1,97 @@
-# Title
+# Flutter Localization
 
-Short Description
+Flutter localization refers to the process of adapting a Flutter application to different languages and regions, enhancing its usability for a global audience. Localization in Flutter involves translating the app's text, adjusting its layout for right-to-left (RTL) languages, and adapting other locale-specific elements such as date and number formats.
 
-## Table of Contents
+Key components of Flutter localization include:
 
-- [Demo](#-demo)
+1. Arb (Application Resource Bundle) Files: These are JSON-like files used to store localized strings for different languages.
+2. intl Package: A Dart package that provides tools for internationalization and localization, such as date formatting and message translation.
+3. Localization Delegates and Locales: These are used to configure the supported languages in the app and manage the loading of localized resources.
+4. MaterialApp or CupertinoApp Configuration: Localization settings are typically integrated into the app's root widget, enabling the app to adapt to the device's locale settings automatically.
 
-<!-- [Live Demo](#-live-demo) -->
+Implementing localization in Flutter ensures that the app can reach a wider audience by providing an intuitive and culturally relevant user experience for users worldwide.
 
-- [Features](#-features)
-- [Technologies Used](#-technologies-used)
-- [Installation & Usage](#-installation--usage)
-- [Motivation](#-motivation)
-- [Architecture/Design](#-architecturedesign)
-- [Topics](#-topics-)
-- [Packages Used](#-packages-used)
-- [QA](#-qa)
-- [Explore](#-explore-)
-- [Issues](#-issues)
-- [Contact](#-contact)
-- [Related Projects](#-related-projects)
-- [Acknowledgments](#-acknowledgments)
 
-## 🎥 Demo
+## Features
 
-![Demo](demo.gif)
+- English Language
+- Bangla Language
+- Save selected language in local db
+
+
+## Showcase
+![alt text](https://github.com/alxayeed/-/blob/main/ss/demo.gif)
+
+<table>
+
+
+  <tr>
+    <td><img src="ss/ss1.png" width="100%" height="70%" /></td>
+    <td><img src="ss/ss2.png" width="100%" height="70%" /></td>
+    <td><img src="ss/calenderen.png" width="100%" height="70%" /></td>
+  </tr>
+  <tr>
+    <td><img src="ss/ss4.png" width="100%" height="70%" /></td>
+    <td><img src="ss/ss3.png" width="100%" height="70%" /></td>
+    <td><img src="ss/calenderbn.png" width="100%" height="70%" /></td>
+  </tr>
+ </table>
+<br/>
+
+</br>
+</br>
+
+## Stacks
+
+- Dart
+- Flutter
+- Localization
 
 <!--
+## Q/A
 
-## 🚀 Live Demo
+<pre>
+1. What does <i>WidgetsFlutterBinding.ensureInitialized()</i> do? 
 
-🟢 [Google Play Store](https://play.google.com/store/apps/details?id=com.your_username.awesomeapp)
 
-🍏 [Apple App Store](https://apps.apple.com/us/app/awesome-app/id1234567890)
+That means Flutter needs to call native code before calling runApp.
+It is used to communicate with platform channel(from Engine layer) to call the native code.
+In this project, flutter communicates with native platfort to get <i>getApplicationDocumentsDirectory</i> which is a platform specific storage location.
+</pre>
 
-Please note that the live demo may have limited features compared to the full version available in the GitHub repository.
+
+</br>
+
+## Topics to have a look
+- BLoC
+- BLoC debugger info
+- BlocBuilder
+- BlocListener
+- BlocConsumer
+- HydratedBloc
 -->
 
-## 🚀 Features
 
-- T1
--
--
+## Packages and dependencies
 
-## 🛠️ Technologies Used
+- [intl](https://https://pub.dev/packages/intl)
+- [flutter_localizations](https://https://pub.dev/packages/flutter_localization)
 
-- Swift
--
--
+</br>
+</br>
 
-## 🚧 Installation & Usage
-
-1. Clone the repository: `git clone https://github.com/your_username/awesome-app.git`
-2. Navigate to the project directory: `cd awesome-app`
-3. Get dependencies: `flutter pub get`
-4. Run the app: `flutter run`
-
-## 📃 Motivation
-
-This project is built from personal interest to explore the world of iOS
-
-## 🏛️ Architecture/Design
-
-- MVVM
-
-## Topics 🌟
-
-- Topic 1
-- Topic 2
-- Topic 3
-
-## 📦 Packages Used
-
-- [Firebase core](https://pub.dev/packages/firebase_core)
-- []()
-- []()
-- []()
-
-## ❓ QA
-
-#### Q: Question 1?
+<!--
+## Issues
+- Can't Run Flutter Project Exited (sigterm)
 
 <pre>
-A: Answer 1.
+flutter clean 
+flutter pub get 
 </pre>
 
-#### Q: Question 2?
+- Undefined name 'HydratedBlocOverrides'
 
 <pre>
-A: Answer 2.
+Had to downgrade hydrated_bloc from latest to ^8.1.0 version
 </pre>
-
-## 📖 Explore
-
-- Topic 1
-- Topic 2
-- Topic 3
-
-## 🐛 Issues
-
-- The app crashes on certain devices with older Android versions. Investigating the root cause.
-
-## 📞 Contact
-
-For any inquiries or collaboration requests, feel free to reach out
-via [email](mailto:alxayeed@gmail.com) or connect
-on [LinkedIn](https://www.linkedin.com/in/alxayeed).
-
-## 📌 Related Projects
-
-Check out our other awesome projects:
-
-- [Cool Utility Tools](https://github.com/your_username/cool-utility-tools)
-- []()
-- []()
-
-## 🙏 Acknowledgments
-
-We would like to express our gratitude to the Flutter and Firebase teams for providing exceptional
-tools that made this project possible.
+-->
